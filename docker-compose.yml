@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  nondeterministic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: technologies
+      cache_to:
+        - type=inline
